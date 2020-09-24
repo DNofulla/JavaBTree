@@ -48,24 +48,24 @@ public class Driver {
         RootNode MainRootNode = new RootNode(1, 1000, Nodes1100);
         
         // These values exist in the Tree
-        System.out.println("Searching 100, Must be True: " + search(MainRootNode, 100, 0));
-        System.out.println("Searching 120, Must be True: " + search(MainRootNode, 120, 0));
-        System.out.println("Searching 140, Must be True: " + search(MainRootNode, 140, 0));
-        System.out.println("Searching 160, Must be True: " + search(MainRootNode, 160, 0));
-        System.out.println("Searching 200, Must be True: " + search(MainRootNode, 200, 0));
-        System.out.println("Searching 220, Must be True: " + search(MainRootNode, 220, 0));
-        System.out.println("Searching 240, Must be True: " + search(MainRootNode, 240, 0));
-        System.out.println("Searching 260, Must be True: " + search(MainRootNode, 260, 0));
-        System.out.println("Searching 300, Must be True: " + search(MainRootNode, 300, 0));
-        System.out.println("Searching 320, Must be True: " + search(MainRootNode, 320, 0));
-        System.out.println("Searching 340, Must be True: " + search(MainRootNode, 340, 0));
-        System.out.println("Searching 360, Must be True: " + search(MainRootNode, 360, 0));
+        System.out.println("Searching 100, Must be True: " + search(MainRootNode, 100));
+        System.out.println("Searching 120, Must be True: " + search(MainRootNode, 120));
+        System.out.println("Searching 140, Must be True: " + search(MainRootNode, 140));
+        System.out.println("Searching 160, Must be True: " + search(MainRootNode, 160));
+        System.out.println("Searching 200, Must be True: " + search(MainRootNode, 200));
+        System.out.println("Searching 220, Must be True: " + search(MainRootNode, 220));
+        System.out.println("Searching 240, Must be True: " + search(MainRootNode, 240));
+        System.out.println("Searching 260, Must be True: " + search(MainRootNode, 260));
+        System.out.println("Searching 300, Must be True: " + search(MainRootNode, 300));
+        System.out.println("Searching 320, Must be True: " + search(MainRootNode, 320));
+        System.out.println("Searching 340, Must be True: " + search(MainRootNode, 340));
+        System.out.println("Searching 360, Must be True: " + search(MainRootNode, 360));
         
         // These values don't exist in the Tree
-        System.out.println("Searching 20, Must be False: " + search(MainRootNode, 20, 0));
-        System.out.println("Searching -20, Must be False: " + search(MainRootNode, -20, 0));
-        System.out.println("Searching 2000, Must be False: " + search(MainRootNode, 2000, 0));
-        System.out.println("Searching 210, Must be False: " + search(MainRootNode, 210, 0));
+        System.out.println("Searching 20, Must be False: " + search(MainRootNode, 20));
+        System.out.println("Searching -20, Must be False: " + search(MainRootNode, -20));
+        System.out.println("Searching 2000, Must be False: " + search(MainRootNode, 2000));
+        System.out.println("Searching 210, Must be False: " + search(MainRootNode, 210));
         
         
     }
@@ -125,9 +125,9 @@ public class Driver {
 		
 	}
 	
-	
-	
-	
-	
+      public static boolean search(Node root, int key) {
+               return search(root, key, 0);
+      }
+		
 }
 
